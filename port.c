@@ -407,7 +407,7 @@
   * the context is saved at the start of vPortYieldFromTick().  The tick
   * count is incremented after the context is saved.
   */
-	 void TIMER1_COMPA_vect( void ) __attribute__( ( signal, naked ) );
+	 void TIMER1_COMPA_vect( void ) __attribute__( ( signal, naked, used ) );
 	 void TIMER1_COMPA_vect( void )
 	 {
 		 vPortYieldFromTick();
@@ -420,7 +420,7 @@
   * tick count.  We don't need to switch context, this can only be done by
   * manual calls to taskYIELD();
   */
-	 void TIMER1_COMPA_vect( void ) __attribute__( ( signal ) );
+	 void TIMER1_COMPA_vect( void ) __attribute__( ( signal, used ) );
 	 void TIMER1_COMPA_vect( void )
 	 {
 		 xTaskIncrementTick();
