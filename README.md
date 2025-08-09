@@ -6,7 +6,7 @@ In an existing project, run the following command to install the component:
 
 ```text
 cd ../your_project/lib
-git clone http://git.zh.com.ru/alexey.zholtikov/zh_avr_free_rtos
+git clone http://git.zh.com.ru/avr_libraries/zh_avr_free_rtos
 ```
 
 In the application, add the component:
